@@ -1,8 +1,8 @@
-import MainNavbar from "../components/NavBar/MainNavbar.jsx";
-import Pricing from "../components/Pricing/pricing";
-import Testimonial from "../components/Testimonial/testimonial.jsx";
-import Footer from "../components/Footer/footer";
-import FaqSection from "../components/Pricing/faq.jsx";
+import MainNavbar from "../components/NavBar/MainNavbar.js";
+import Pricing from "../components/Pricing/pricing.js";
+import Testimonial from "../components/Testimonial/testimonial.js";
+import Footer from "../components/Footer/footer.js";
+import FaqSection from "../components/Pricing/faq.js";
 
 const PricingPage = () => {
     return (

@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
-import logo from "../../../images/logo.png";
+import logo from "../../images/logo.png";
 import "./index.css";
+
 
 const Home = () => {
 
@@ -29,18 +30,12 @@ const Home = () => {
     const currentSlide = quotes[currentIndex];
 
     const previous = () => {
-        setCurrentIndex((prevState) => {
-            let index = currentIndex + 1;
-            if (index >= 2) {
-                index = 0;
-            }
-            return index;
-        })
-    }
+        setCurrentIndex((prev) => (prev - 1 + quotes.length) % quotes.length);
+    };
 
     const next = () => {
-
-    }
+        setCurrentIndex((prev) => (prev + 1) % quotes.length);
+    };
 
     return (
         <>
@@ -78,7 +73,7 @@ const Home = () => {
                                 <Col lg={6}>
                                     <h5>{currentSlide.text}</h5>
                                     <h3>{currentSlide.name}</h3>
-                                    <strong>{currentIndex.title}</strong>
+                                    <strong>{currentSlide.title}</strong>
                                 </Col>
                             </Row>
                             <Button onClick={previous}>Prev</Button>

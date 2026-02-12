@@ -1,10 +1,11 @@
-import Footer from "../components/Footer/footer";
-import Header from "../components/header/header";
+import Footer from "../components/Footer";
+import Header from "../components/Header/header";
 import MainNavbar from "../components/NavBar/MainNavbar";
-import LatestVideos from "../components/LatestVideos/LVideo";
+import LatestVideos from "../components/LatestVideos";
 import Membership from "../components/Membership/membership";
 import PopularTutorials from "../components/Popular/popular_tutorial";
 import Testimonial from "../components/Testimonial/testimonial";
+
 
 const HomePage = () => {
     return (

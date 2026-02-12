@@ -1,8 +1,9 @@
-import MainNavbar from "../components/NavBar/MainNavbar.jsx";
-import CoursesP from "../components/Courses/courses.jsx";
-import Footer from "../components/Footer/footer.jsx";
-import VideoPart from "../components/Courses/videos.jsx";
-import VideoFilter from "../components/Courses/sortby.jsx";
+import MainNavbar from "../components/NavBar/MainNavbar";
+import CoursesP from "../components/Courses/courses";
+import Footer from "../components/Footer";
+import VideoPart from "../components/Courses/videos";
+import VideoFilter from "../components/Courses/sortby";
+
 
 const CoursesPage = () => {
     return (
