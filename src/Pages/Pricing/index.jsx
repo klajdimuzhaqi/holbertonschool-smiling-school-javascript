@@ -1,15 +1,15 @@
-import MainNavbar from "../components/NavBar/MainNavbar.js";
-import Pricing from "../components/Pricing/pricing.js";
-import Testimonial from "../components/Testimonial/testimonial.js";
-import Footer from "../components/Footer/footer.js";
-import FaqSection from "../components/Pricing/faq.js";
+import MainNavbar from "../../Components/NavBar/MainNavbar";
+import Testimonial from "../../Components/Testimonial/testimonial";
+import Footer from "../../Components/Footer/footer";
+
+
 
 const PricingPage = () => {
     return (
         <>
             <div className="bg-pricing text-white">
                 <MainNavbar />
-                <Pricing />
+                <PricingComponent />
             </div>
             <Testimonial />
             <FaqSection />

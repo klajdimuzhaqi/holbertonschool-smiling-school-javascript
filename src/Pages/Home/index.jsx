@@ -1,90 +1,29 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { Container, Row, Col, Button, Image } from "react-bootstrap";
-import logo from "../../images/logo.png";
-import "./index.css";
+import Footer from "../../Components/Footer/footer";
+import Header from "../../Components/header/header";
+import LVideo from "../../Components/LatestVideos/LVideo";
+import Membership from "../../Components/Membership/membership";
+import PopularTutorial from "../../Components/Popular/popular_tutorial";
+import MainNavbar from "../../Components/NavBar/MainNavbar";
+import Testimonial from "../../Components/Testimonial/testimonial";
 
 
-const Home = () => {
-
-    const [quotes, setQuotes] = useState([]);
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [error, setError] = useState("");
-
-    useEffect(() => {
-        async function loadData() {
-            try {
-                const data = await axios.get("https://smileschool-api.hbtn.info/quotes");
-                if (data.status === 200) {
-                    setQuotes(data.data)
-                }
-            } catch (error) {
-                setError("We can not load data for the moment");
-            }
-        }
-
-        loadData();
-    }, []);
 
 
-    const currentSlide = quotes[currentIndex];
 
-    const previous = () => {
-        setCurrentIndex((prev) => (prev - 1 + quotes.length) % quotes.length);
-    };
-
-    const next = () => {
-        setCurrentIndex((prev) => (prev + 1) % quotes.length);
-    };
-
+const HomePage = () => {
     return (
         <>
-            <header>
-                <nav>
-                    <img src={logo} />
-                    <ul className="menu">
-                        <li>Home</li>
-                        <li>Pricing</li>
-                        <li>Courses</li>
-                    </ul>
-                </nav>
-
-                <h2 className="schooled">Get Schooled</h2>
-                <ul className="categories">
-                    <li>smile</li>
-                    <li>green</li>
-                    <li>laugh</li>
-                </ul>
-
-                <button className="register-btn">register for free</button>
-            </header>
-
-            <main>
-                <section className="quote-slider">
-                    {
-                        currentSlide &&
-                        <Container>
-                            <Row>
-                                <Col lg={4}>
-                                    <div className="img-quote">
-                                        <Image src={currentSlide.pic_url} roundedCircle />
-                                    </div>
-                                </Col>
-                                <Col lg={6}>
-                                    <h5>{currentSlide.text}</h5>
-                                    <h3>{currentSlide.name}</h3>
-                                    <strong>{currentSlide.title}</strong>
-                                </Col>
-                            </Row>
-                            <Button onClick={previous}>Prev</Button>
-                            {currentIndex}
-                            <Button onClick={next}>Next</Button>
-                        </Container>
-                    }
-                </section>
-            </main >
-            <footer></footer>
+            <div className="bg-image text-white">
+                <MainNavbar />
+                <Header />
+            </div>
+            <Testimonial />
+            <PopularTutorials />
+            <Membership />
+            <LVideo />
+            <Footer />
         </>
     )
 }
-export default Home;
+
+export default HomePage;

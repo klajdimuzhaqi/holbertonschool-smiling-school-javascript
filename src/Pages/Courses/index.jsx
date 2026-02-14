@@ -1,25 +1,19 @@
-import Footer from "../components/Footer/footer";
-import Header from "../components/header/header";
-import MainNavbar from "../components/NavBar/MainNavbar";
-import LatestVideos from "../components/LatestVideos/LVideo";
-import Membership from "../components/Membership/membership";
-import PopularTutorials from "../components/Popular/popular_tutorial";
-import Testimonial from "../components/Testimonial/testimonial";
+import MainNavbar from "../../Components/NavBar/MainNavbar";
+import CoursesP from "../../Components/Courses/courses";
+import Footer from "../../Components/Footer/footer";
+import VideoPart from "../../Components/Courses/videos";
 
-const HomePage = () => {
+const Courses = () => {
     return (
         <>
-            <div className="bg-image text-white">
+            <div className="bg-course text-white">
                 <MainNavbar />
-                <Header />
+                <CoursesP />
             </div>
-            <Testimonial />
-            <PopularTutorials />
-            <Membership />
-            <LatestVideos />
+            <VideoPart />
             <Footer />
         </>
-    )
-}
+    );
+};
 
-export default HomePage;
+export default Courses;

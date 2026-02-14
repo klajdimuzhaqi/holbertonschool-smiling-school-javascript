@@ -2,7 +2,7 @@ import { Container, Row, Col, Card, Image } from "react-bootstrap";
 import play from "../../images/play.png";
 import starColor from "../../images/star_on.png";
 import starGray from "../../images/star_off.png";
-import './index.css';
+import './LVideo.css';
 import PopularVideos from "../db/popular.jsx";
 
 
@@ -19,7 +19,6 @@ const renderStars = (count) => {
             //  empty star
             starImage = starGray;
         }
-        // Add the star image the array
         stars.push(
             <Image
                 src={starImage}
@@ -40,12 +39,11 @@ const LatestVideos = () => {
                 <h1 className="text-center fs-2 py-5 mb-5 fw-light">
                     <span className="fw-bold txt-learn">Latest</span> videos
                 </h1>
-
                 <div className="d-flex align-items-center position-relative">
                     {/* Cards */}
                     <Row className="g-4" >
                         {PopularVideos.map((PopularVideo) => (
-                            <Col md={3} >
+                            <Col xs={12} sm={12} md={6} lg={6} xl={3} >
                                 <Card className="bg-white shadow-sm">
                                     <div className="position-relative overflow-hidden rounded-top">
                                         <Image
