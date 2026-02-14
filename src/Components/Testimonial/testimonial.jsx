@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
-import arrowLeft from "../../images/arrow_white_left.png";
-import arrowRight from "../../images/arrow_white_right.png";
+import arrowLeft from "../../Images/arrow_white_left.png";
+import arrowRight from "../../Images/arrow_white_right.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './testimonial.css';
 import axios from "axios";

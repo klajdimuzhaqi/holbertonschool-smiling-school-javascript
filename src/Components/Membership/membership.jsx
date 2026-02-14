@@ -1,5 +1,5 @@
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
-import smile from "../../images/smile_on.png";
+import smile from "../../Images/smile_on.png";
 import './membership.css';
 
 const Membership = () => {

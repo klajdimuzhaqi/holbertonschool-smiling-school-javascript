@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card, Image, Button } from "react-bootstrap";
 import axios from "axios";
-import play from "../../images/play.png";
-import starColor from "../../images/star_on.png";
-import starGray from "../../images/star_off.png";
-import arrowLeft from "../../images/arrow_black_left.png";
-import arrowRight from "../../images/arrow_black_right.png";
+import play from "../../Images/play.png";
+import starColor from "../../Images/star_on.png";
+import starGray from "../../Images/star_off.png";
+import arrowLeft from "../../Images/arrow_black_left.png";
+import arrowRight from "../../Images/arrow_black_right.png";
 import "./popular_tutorial.css";
 
 const PopularTutorials = () => {

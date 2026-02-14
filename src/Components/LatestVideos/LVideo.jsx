@@ -1,9 +1,9 @@
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
-import play from "../../images/play.png";
-import starColor from "../../images/star_on.png";
-import starGray from "../../images/star_off.png";
+import play from "../../Images/play.png";
+import starColor from "../../Images/star_on.png";
+import starGray from "../../Images/star_off.png";
 import './LVideo.css';
-import PopularVideos from "../db/popular.jsx";
+import PopularVideos from "../db/popular";
 
 
 const renderStars = (count) => {

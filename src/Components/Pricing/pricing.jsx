@@ -1,8 +1,8 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
-import logo from "../../images/smile_off.png";
-import logoText from "../../images/logo.png";
-import signal from "../../images/signal.png";
-import play from "../../images/play.png";
+import logo from "../../Images/play.png";
+import logoText from "../../Images/logo.png";
+import signal from "../../Images/signal.png";
+import play from "../../Images/play.png";
 import { CheckCircle } from "react-bootstrap-icons";
 import "./pricing.css";
 

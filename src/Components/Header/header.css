@@ -6,7 +6,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url("../../images/pic_1.jpg");
+    background: url("../../Images/pic_1.jpg");
     z-index: -1;
     background-repeat: no-repeat;
     background-size: cover;

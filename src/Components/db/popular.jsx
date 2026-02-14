@@ -1,8 +1,8 @@
-import profile from "../../images/profile_1.jpg";
-import diagonal from "../../images/thumbnail_4.jpg";
-import sad from "../../images/thumbnail_3.jpg";
-import natural from "../../images/thumbnail_2.jpg";
-import happy from "../../images/thumbnail_1.jpg";
+import profile from "../../Images/profile_1.jpg";
+import diagonal from "../../Images/thumbnail_4.jpg";
+import sad from "../../Images/thumbnail_3.jpg";
+import natural from "../../Images/thumbnail_2.jpg";
+import happy from "../../Images/thumbnail_1.jpg";
 
 
 const PopularVideos = [

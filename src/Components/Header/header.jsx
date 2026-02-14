@@ -1,8 +1,8 @@
 import { Container, Button, Row, Col, Card } from "react-bootstrap";
-import phillip from "../../images/profile_1.jpg";
-import nannie from "../../images/profile_2.jpg";
-import bruce from "../../images/profile_3.jpg";
-import henry from "../../images/profile_4.jpg";
+import phillip from "../../Images/profile_1.jpg";
+import nannie from "../../Images/profile_2.jpg";
+import bruce from "../../Images/profile_3.jpg";
+import henry from "../../Images/profile_4.jpg";
 import "./header.css";
 
 const Header = () => {

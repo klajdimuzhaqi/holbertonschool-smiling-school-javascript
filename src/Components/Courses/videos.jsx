@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card, Image, Form, InputGroup } from "react-bootstrap";
 import { Search } from "react-bootstrap-icons";
 import axios from "axios";
-import play from "../../images/play.png";
-import starColor from "../../images/star_on.png";
-import starGray from "../../images/star_off.png";
+import play from "../../Images/play.png";
+import starColor from "../../Images/star_on.png";
+import starGray from "../../Images/star_off.png";
 import "./videos.css"
 
 

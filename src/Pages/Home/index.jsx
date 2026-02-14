@@ -1,11 +1,10 @@
 import Footer from "../../Components/Footer/footer";
-import Header from "../../Components/header/header";
-import LVideo from "../../Components/LatestVideos/LVideo";
+import Header from "../../Components/Header/header";
+import LatestVideos from "../../Components/LatestVideos/LVideo";
 import Membership from "../../Components/Membership/membership";
-import PopularTutorial from "../../Components/Popular/popular_tutorial";
+import PopularTutorials from "../../Components/Popular/popular_tutorial";
 import MainNavbar from "../../Components/NavBar/MainNavbar";
 import Testimonial from "../../Components/Testimonial/testimonial";
-
 
 
 
@@ -20,7 +19,7 @@ const HomePage = () => {
             <Testimonial />
             <PopularTutorials />
             <Membership />
-            <LVideo />
+            <LatestVideos />
             <Footer />
         </>
     )

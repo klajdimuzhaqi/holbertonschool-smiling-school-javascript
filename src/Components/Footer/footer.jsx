@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Facebook, TwitterX, Instagram } from "react-bootstrap-icons";
-import logo from "../../images/smile_off.png";
-import smile from "../../images/logo.png";
+import logo from "../../Images/smile_off.png";
+import smile from "../../Images/logo.png";
 import "./footer.css";
 
 const Footer = () => {

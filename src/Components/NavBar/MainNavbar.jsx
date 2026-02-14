@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../../images/smile_off.png";
-import logo1 from "../../images/logo.png";
+import logo from "../../Images/smile_off.png";
+import logo1 from "../../Images/logo.png";
 import './navbar.css';
 import { Link } from 'react-router-dom';
 
