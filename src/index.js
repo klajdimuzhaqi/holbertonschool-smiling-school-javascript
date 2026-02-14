@@ -1,19 +1,17 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/Home/index.jsx";
-import PricingPage from "./pages/Pricing/index.jsx";
-import CoursesPage from "./pages/Courses/index.jsx";
-
+import Home from "./Pages/Home/index";
+import PricingPage from "./Pages/Pricing/index";
+import Courses from "./Pages/Courses/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<Home />} />
             <Route path="/Pricing" element={<PricingPage />} />
-            <Route path="/Courses" element={<CoursesPage />} />
-            {/* <Route path="/home" element={<Home />} /> */}
+            <Route path="/Courses" element={<Courses />} />
         </Routes>
     </BrowserRouter>
 
